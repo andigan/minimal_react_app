@@ -6,7 +6,8 @@ import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 
 // actions
-import { setBoxColor } from '../actions'
+import { setBoxColor, getLuke } from '../actions'
+
 
 // styles
 import styles from '../styles/components/button.css';
@@ -19,6 +20,7 @@ class Button extends Component {
 
   handleClick() {
     this.props.setBoxColor('red');
+    this.props.getLuke();
   }
 
   render () {
@@ -29,7 +31,7 @@ class Button extends Component {
 }
 
 function mapDispatchToProps (dispatch) {
-  return bindActionCreators( { setBoxColor }, dispatch)
+  return bindActionCreators( { setBoxColor, getLuke }, dispatch)
 }
 
 export default connect (null, mapDispatchToProps)(Button);
