@@ -15,16 +15,17 @@ module.exports = {
         }],
       },
       {
-        test: /\.scss$/,
+        test: /\.css$/,
         use: ExtractTextPlugin.extract({
-          fallback: 'style-loader',
-          use: ['css-loader']
-        })
+             fallback: "style-loader",
+             use: "css-loader"
+           })
       }
     ]},
 
-
   plugins: [
-    new ExtractTextPlugin('./public/css/styles.css')
+    new ExtractTextPlugin('./public/css/bundle.css', {
+      allChunks: true
+    })
   ]
 };

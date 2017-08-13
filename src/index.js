@@ -12,12 +12,15 @@ import ReduxPromise from 'redux-promise';
 // reducers
 import rootReducer from './reducers/root-reducer'
 
+// components
+import PageContainer from './components/page-container';
+
 const store = createStore(rootReducer, composeWithDevTools(
   applyMiddleware(ReduxPromise)
 ));
 
 ReactDOM.render(
   <Provider store={store}>
-    <div> HELLO </div>
+    <PageContainer />
   </Provider>, document.getElementById('app')
 );
