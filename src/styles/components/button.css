@@ -6,4 +6,7 @@
   text-align: center;
   margin: 10px auto;
   border: 2px solid purple;
+  position: absolute;
+  top: 1px;
+  left: 5%;
 }

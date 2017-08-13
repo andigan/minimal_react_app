@@ -1,0 +1,9 @@
+.input-field {
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid transparent;
+}
+
+.input-field:focus {
+  border: 1px solid blue;
+}

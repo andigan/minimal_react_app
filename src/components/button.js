@@ -19,7 +19,7 @@ class Button extends Component {
   }
 
   handleClick() {
-    this.props.setBoxColor('red');
+    this.props.setBoxColor('blue');
     this.props.getLuke();
   }
 

@@ -1,4 +1,7 @@
 .star-wars-name-container {
   background-color: grey;
   width: 40%;
+  position: absolute;
+  left: 50%;
+  margin: 10px auto;
 }

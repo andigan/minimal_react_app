@@ -5,6 +5,7 @@ import React, { Component } from 'react';
 import BoxToChange from './box-to-change';
 import Button from './button';
 import StarWarsName from './star-wars-name-container';
+import DemoBox from './demo-box.js'
 
 import styles from '../styles/page.css';
 
@@ -14,6 +15,7 @@ class PageContainer extends Component {
         <BoxToChange />
         <Button />
         <StarWarsName />
+        <DemoBox />
       </div>
     }
 }
