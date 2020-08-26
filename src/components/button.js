@@ -9,9 +9,6 @@ import { bindActionCreators } from 'redux'
 import { setBoxColor, getLuke } from '../actions'
 
 
-// styles
-import styles from '../styles/components/button.css';
-
 class Button extends Component {
   constructor() {
     super();
@@ -25,8 +22,25 @@ class Button extends Component {
 
   render () {
 
-    return <div id='button' onClick={this.handleClick}> click me </div>
-
+    return (
+      <div
+        id='button'
+        style={{
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          height: '50px',
+          width: '50px',
+          backgroundColor: 'black',
+          color: 'white',
+          textAlign: 'center',
+          border: '2px solid purple',
+        }}
+        onClick={this.handleClick}
+      >
+        click me
+      </div>
+    );
   }
 }
 

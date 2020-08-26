@@ -7,7 +7,16 @@ import styles from '../styles/components/star-wars.css';
 
 class StarWarsName extends Component {
   render () {
-    return <div className='star-wars-name-container'> {this.props.starWarsCharacter} </div>
+    return (
+      <div
+        className='star-wars-name-container'
+        style={{
+          
+        }}
+      >
+        {this.props.starWarsCharacter}
+      </div>
+    );
   }
 }
 
